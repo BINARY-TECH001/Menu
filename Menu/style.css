@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+img{
+    height: 10rem;
+    width: 20rem;
+}
+
+section{
+    height: 100vh;
+    width: 100vw;
+}
+
+section .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    width: 100%;
+    flex-direction: column;
+}
+
+section .title h2{
+    font-size: 2rem;
+    letter-spacing: 5px;
+    font-weight: 600;
+}
+
+section .title .underline{
+    background-color: goldenrod;
+    height: .25rem;
+    margin-top: .5rem;
+    width: 4%;
+}
+
+.section-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+article{
+    display: flex;
+    width: 50%;
+}
+
+article img{
+    border: 4px solid goldenrod;
+    border-radius: .3rem;
+    margin: 1rem;
+    padding: .2rem;
+}
+
+article .item-info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.2rem;
+}
+
+.item-info header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(197, 197, 197);
+    padding: .3rem;
+    width: 100%;
+}
+
+.item-text{
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-top: .5rem;
+    color: rgb(60, 70, 70);
+}
+
+header h4:nth-child(1){
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    font-weight: 700;
+}
+
+header h4:nth-child(2){
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: goldenrod;
+}
+
+.btn-container{
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.btn-container button{
+    margin-right: 1rem;
+    width: 10%;
+    height: 2rem;
+    background-color: transparent;
+    border: 1.2px solid goldenrod;
+    border-radius: .5rem;
+    color: #daa520ee;
+    font-size: .8rem;
+    letter-spacing: 2px;
+    transition: all .5s ease-in-out;
+}
+
+.btn-container button:hover{
+    background-color: goldenrod;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* MOBILE RESPONSIVE STYLE STARTS HERE */
+
+@media (max-width: 1000px){
+    .section-center{
+        display: flex;
+        height: auto;
+        width: 100vw;
+        flex-wrap: wrap;
+    }
+
+    article{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    section .title .underline{
+        width: 10%;
+    }
+
+    article .item-info{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.2rem;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+    }
+    .item-info header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgb(197, 197, 197);
+        padding: .3rem;
+        width: 100%;
+    }
+    img{
+        width: 50%;
+    }
+    .btn-container{
+        height: auto;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .btn-container button{
+        width: 50%;
+        margin-top: .4rem;
+        height: 2rem;
+    }
+}
